@@ -26,6 +26,8 @@
 
     <body style="background-color: black;">
         <h1>Tic-Tac-Toe</h1>
+        <h2 style="float: left; margin-left: 20px;">Player X Wins: <span id="xtotal" style="color:white"></span></h2>
+        <h2 style="float: right; margin-right: 20px;">Player Y Wins: <span id="ototal" style="color: white"></span></h2>
         <div class="col-md-12 col-sm-12 col-xs-12 container" id="boardfull">
                 <div class="col-md-12 col-sm-12 col-xs-12 row">
             <div class="col-md-4 col-sm-4 col-xs-4 tic" style="color: cyan; text-align: center; font-size: 100px;" id="board1"></div>
@@ -43,8 +45,8 @@
             <div class="col-md-4 col-sm-4 col-xs-4 tic" style="color: cyan; text-align: center; font-size: 100px;" id="board9"></div>
             </div>
             </div>
-            <p style="color: cyan; font-size: 60px; text-align: center;" id="xwins">Player X Wins!</p>
-            <p style="color: cyan; font-size: 60px; text-align: center;" id="owins">Player O Wins!</p>
+            <p style="color: cyan; font-size: 40px; text-align: center;" id="xwins">Player X Wins!</p>
+            <p style="color: cyan; font-size: 40px; text-align: center;" id="owins">Player O Wins!</p>
             <p style="color: white; font-size: 60px; text-align: center;" id="xturn">Player X, it's your turn!</p>
             <p style="color: white; font-size: 60px; text-align: center;" id="oturn">Player O, it's your turn!</p>
             <button onclick="gameRestartX()" class="btn btn-default" id="restartx" style="font-size: 60px; margin-left: 480px">Play Again!</button>
