@@ -10,6 +10,7 @@ function gameRestartX() {
     $("#owins").hide();
     $("#xturn").show();
     $("#oturn").hide();
+    createX();
 
 }
 
@@ -23,6 +24,7 @@ function gameRestartO() {
     $("#owins").hide();
     $("#xturn").hide();
     $("#oturn").show();
+    createX();
 
 }
 
@@ -60,116 +62,131 @@ $('.tic').click(function() {
 
 function victory() {
     if ($("#board1").text() == 'X' && $("#board2").text() == 'X' && $("#board3").text() == 'X') {
-        $("#boardfull").hide();
+        $(".tic").off('click'); 
         $("#restartx").show();
         $("#xwins").show();
         $("#xturn").hide();
-    $("#oturn").hide();
+        $("#oturn").hide();
     }
     if ($("#board4").text() == 'X' && $("#board5").text() == 'X' && $("#board6").text() == 'X') {
+        $(".tic").off('click'); 
         $("#boardfull").hide();
         $("#restartx").show();
         $("#xwins").show();
         $("#xturn").hide();
-    $("#oturn").hide();
+        $("#oturn").hide();
     }
     if ($("#board7").text() == 'X' && $("#board8").text() == 'X' && $("#board9").text() == 'X') {
+        $(".tic").off('click'); 
         $("#boardfull").hide();
         $("#restartx").show();
         $("#xwins").show();
         $("#xturn").hide();
-    $("#oturn").hide();
+        $("#oturn").hide();
     }
     if ($("#board1").text() == 'X' && $("#board4").text() == 'X' && $("#board7").text() == 'X') {
+        $(".tic").off('click'); 
         $("#boardfull").hide();
         $("#restartx").show();
         $("#xwins").show();
         $("#xturn").hide();
-    $("#oturn").hide();
+        $("#oturn").hide();
     }
     if ($("#board2").text() == 'X' && $("#board5").text() == 'X' && $("#board8").text() == 'X') {
+        $(".tic").off('click'); 
         $("#boardfull").hide();
         $("#restartx").show();
         $("#xwins").show();
         $("#xturn").hide();
-    $("#oturn").hide();
+        $("#oturn").hide();
     }
     if ($("#board3").text() == 'X' && $("#board6").text() == 'X' && $("#board9").text() == 'X') {
+        $(".tic").off('click'); 
         $("#boardfull").hide();
         $("#restartx").show();
         $("#xwins").show();
         $("#xturn").hide();
-    $("#oturn").hide();
+        $("#oturn").hide();
     }
     if ($("#board1").text() == 'X' && $("#board5").text() == 'X' && $("#board9").text() == 'X') {
+        $(".tic").off('click'); 
         $("#boardfull").hide();
         $("#restartx").show();
         $("#xwins").show();
         $("#xturn").hide();
-    $("#oturn").hide();
+        $("#oturn").hide();
     }
     if ($("#board3").text() == 'X' && $("#board5").text() == 'X' && $("#board7").text() == 'X') {
+        $(".tic").off('click'); 
         $("#boardfull").hide();
         $("#restartx").show();
         $("#xwins").show();
         $("#xturn").hide();
-    $("#oturn").hide();
+        $("#oturn").hide();
     }
     if ($("#board1").text() == 'O' && $("#board2").text() == 'O' && $("#board3").text() == 'O') {
+        $(".tic").off('click'); 
         $("#boardfull").hide();
         $("#restarto").show();
         $("#owins").show();
         $("#xturn").hide();
-    $("#oturn").hide();
+        $("#oturn").hide();
     }
     if ($("#board4").text() == 'O' && $("#board5").text() == 'O' && $("#board6").text() == 'O') {
+        $(".tic").off('click'); 
         $("#boardfull").hide();
         $("#restarto").show();
         $("#owins").show();
         $("#xturn").hide();
-    $("#oturn").hide();
+        $("#oturn").hide();
     }
     if ($("#board7").text() == 'O' && $("#board8").text() == 'O' && $("#board9").text() == 'O') {
+        $(".tic").off('click'); 
         $("#boardfull").hide();
         $("#restarto").show();
         $("#owins").show();
         $("#xturn").hide();
-    $("#oturn").hide();
+        $("#oturn").hide();
     }
     if ($("#board1").text() == 'O' && $("#board4").text() == 'O' && $("#board7").text() == 'O') {
+        $(".tic").off('click'); 
         $("#boardfull").hide();
         $("#restarto").show();
         $("#owins").show();
         $("#xturn").hide();
-    $("#oturn").hide();
+        $("#oturn").hide();
     }
     if ($("#board2").text() == 'O' && $("#board5").text() == 'O' && $("#board8").text() == 'O') {
+        $(".tic").off('click'); 
         $("#boardfull").hide();
         $("#restarto").show();
         $("#owins").show();
         $("#xturn").hide();
-    $("#oturn").hide();
+        $("#oturn").hide();
     }
     if ($("#board3").text() == 'O' && $("#board6").text() == 'O' && $("#board9").text() == 'O') {
+        $(".tic").off('click'); 
         $("#boardfull").hide();
         $("#restarto").show();
         $("#owins").show();
         $("#xturn").hide();
-    $("#oturn").hide();
+        $("#oturn").hide();
     }
     if ($("#board1").text() == 'O' && $("#board5").text() == 'O' && $("#board9").text() == 'O') {
+        $(".tic").off('click'); 
         $("#boardfull").hide();
         $("#restarto").show();
         $("#owins").show();
         $("#xturn").hide();
-    $("#oturn").hide();
+        $("#oturn").hide();
     }
     if ($("#board3").text() == 'O' && $("#board5").text() == 'O' && $("#board7").text() == 'O') {
+        $(".tic").off('click'); 
         $("#boardfull").hide();
         $("#restarto").show();
         $("#owins").show();
         $("#xturn").hide();
-    $("#oturn").hide();
+        $("#oturn").hide();
     }
 }
 
