@@ -1,6 +1,7 @@
 var turn = 0;
 var xcounter = 0;
 var ocounter = 0;
+var winwin;
 
 function gameRestartX() {
     xcounter++;
@@ -189,13 +190,19 @@ function victory() {
         $("#oturn").hide();
         $("#board1, #board5, #board9").css("color", "red");
     }
-    if ($("#board3").text() == 'O' && $("#board5").text() == 'O' && $("#board7").text() == 'O') {
+    if ($("#board3").text() == 'O' && $("#board5").text() == 'O' && $("#board7").text() == 'O' && $("#draw").hide() ) {
         $(".tic").off('click'); 
         $("#restarto").show();
         $("#owins").show();
         $("#xturn").hide();
         $("#oturn").hide();
         $("#board3, #board5, #board7").css("color", "red");
+    }
+    else if ($("#board1").text() != '' && $("#board2").text() != '' && $("#board3").text() != '' && $("#board4").text() != '' && $("#board5").text() != '' && $("#board6").text() != '' && $("#board7").text() != '' && $("#board8").text() != '' && $("#board9").text() != '') {
+        $("#draw").show();
+        $("#xturn").hide();
+        $("#oturn").hide();
+    turn++;
     }
 }
 
@@ -210,4 +217,5 @@ $("#xwins").hide();
 $("#owins").hide();
 $("#xturn").show();
 $("#oturn").hide();
+$("#draw").hide();
 });
