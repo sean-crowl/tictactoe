@@ -1,0 +1,40 @@
+body {
+    width: 100%;
+}
+
+.tic {
+    background-color: navy;
+    color: white;
+    height: 150px;
+    width: 150px;
+    border: white 2px dotted;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 70px;
+}
+
+tr {
+    display: inline;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#board1{
+    margin-left: 375px;
+}
+
+#board4{
+    margin-left: 375px;
+}
+
+#board7{
+    margin-left: 375px;
+}
+
+<p style="color: cyan; text-align: center; font-size: 100px;">X</p>
