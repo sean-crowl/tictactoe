@@ -77,6 +77,7 @@ function victory() {
         $("#xturn").hide();
         $("#oturn").hide();
         $("#board1, #board2, #board3").css("color", "red");
+        winwin = true;
     }
     if ($("#board4").text() == 'X' && $("#board5").text() == 'X' && $("#board6").text() == 'X') {
         $(".tic").off('click'); 
@@ -85,6 +86,7 @@ function victory() {
         $("#xturn").hide();
         $("#oturn").hide();
         $("#board4, #board5, #board6").css("color", "red");
+        winwin = true;
     }
     if ($("#board7").text() == 'X' && $("#board8").text() == 'X' && $("#board9").text() == 'X') {
         $(".tic").off('click'); 
@@ -93,6 +95,7 @@ function victory() {
         $("#xturn").hide();
         $("#oturn").hide();
         $("#board7, #board8, #board9").css("color", "red");
+        winwin = true;
     }
     if ($("#board1").text() == 'X' && $("#board4").text() == 'X' && $("#board7").text() == 'X') {
         $(".tic").off('click'); 
@@ -101,6 +104,7 @@ function victory() {
         $("#xturn").hide();
         $("#oturn").hide();
         $("#board1, #board4, #board7").css("color", "red");
+        winwin = true;
     }
     if ($("#board2").text() == 'X' && $("#board5").text() == 'X' && $("#board8").text() == 'X') {
         $(".tic").off('click'); 
@@ -109,6 +113,7 @@ function victory() {
         $("#xturn").hide();
         $("#oturn").hide();
         $("#board2, #board5, #board8").css("color", "red");
+        winwin = true;
     }
     if ($("#board3").text() == 'X' && $("#board6").text() == 'X' && $("#board9").text() == 'X') {
         $(".tic").off('click'); 
@@ -117,6 +122,7 @@ function victory() {
         $("#xturn").hide();
         $("#oturn").hide();
         $("#board3, #board6, #board9").css("color", "red");
+        winwin = true;
     }
     if ($("#board1").text() == 'X' && $("#board5").text() == 'X' && $("#board9").text() == 'X') {
         $(".tic").off('click'); 
@@ -125,6 +131,7 @@ function victory() {
         $("#xturn").hide();
         $("#oturn").hide();
         $("#board1, #board5, #board9").css("color", "red");
+        winwin = true;
     }
     if ($("#board3").text() == 'X' && $("#board5").text() == 'X' && $("#board7").text() == 'X') {
         $(".tic").off('click'); 
@@ -133,6 +140,7 @@ function victory() {
         $("#xturn").hide();
         $("#oturn").hide();
         $("#board3, #board5, #board7").css("color", "red");
+        winwin = true;
     }
     if ($("#board1").text() == 'O' && $("#board2").text() == 'O' && $("#board3").text() == 'O') {
         $(".tic").off('click'); 
@@ -141,6 +149,7 @@ function victory() {
         $("#xturn").hide();
         $("#oturn").hide();
         $("#board1, #board2, #board3").css("color", "red");
+        winwin = true;
     }
     if ($("#board4").text() == 'O' && $("#board5").text() == 'O' && $("#board6").text() == 'O') {
         $(".tic").off('click'); 
@@ -149,6 +158,7 @@ function victory() {
         $("#xturn").hide();
         $("#oturn").hide();
         $("#board4, #board5, #board6").css("color", "red");
+        winwin = true;
     }
     if ($("#board7").text() == 'O' && $("#board8").text() == 'O' && $("#board9").text() == 'O') {
         $(".tic").off('click'); 
@@ -157,6 +167,7 @@ function victory() {
         $("#xturn").hide();
         $("#oturn").hide();
         $("#board7, #board8, #board9").css("color", "red");
+        winwin = true;
     }
     if ($("#board1").text() == 'O' && $("#board4").text() == 'O' && $("#board7").text() == 'O') {
         $(".tic").off('click'); 
@@ -165,6 +176,7 @@ function victory() {
         $("#xturn").hide();
         $("#oturn").hide();
         $("#board1, #board4, #board7").css("color", "red");
+        winwin = true;
     }
     if ($("#board2").text() == 'O' && $("#board5").text() == 'O' && $("#board8").text() == 'O') {
         $(".tic").off('click'); 
@@ -173,6 +185,7 @@ function victory() {
         $("#xturn").hide();
         $("#oturn").hide();
         $("#board2, #board5, #board8").css("color", "red");
+        winwin = true;
     }
     if ($("#board3").text() == 'O' && $("#board6").text() == 'O' && $("#board9").text() == 'O') {
         $(".tic").off('click'); 
@@ -181,6 +194,7 @@ function victory() {
         $("#xturn").hide();
         $("#oturn").hide();
         $("#board3, #board6, #board9").css("color", "red");
+        winwin = true;
     }
     if ($("#board1").text() == 'O' && $("#board5").text() == 'O' && $("#board9").text() == 'O') {
         $(".tic").off('click'); 
@@ -189,6 +203,7 @@ function victory() {
         $("#xturn").hide();
         $("#oturn").hide();
         $("#board1, #board5, #board9").css("color", "red");
+        winwin = true;
     }
     if ($("#board3").text() == 'O' && $("#board5").text() == 'O' && $("#board7").text() == 'O' && $("#draw").hide() ) {
         $(".tic").off('click'); 
@@ -197,8 +212,9 @@ function victory() {
         $("#xturn").hide();
         $("#oturn").hide();
         $("#board3, #board5, #board7").css("color", "red");
+        winwin = true;
     }
-    else if ($("#board1").text() != '' && $("#board2").text() != '' && $("#board3").text() != '' && $("#board4").text() != '' && $("#board5").text() != '' && $("#board6").text() != '' && $("#board7").text() != '' && $("#board8").text() != '' && $("#board9").text() != '') {
+    else if ($("#board1").text() != '' && $("#board2").text() != '' && $("#board3").text() != '' && $("#board4").text() != '' && $("#board5").text() != '' && $("#board6").text() != '' && $("#board7").text() != '' && $("#board8").text() != '' && $("#board9").text() != '' && winwin != true) {
         $("#draw").show();
         $("#xturn").hide();
         $("#oturn").hide();
